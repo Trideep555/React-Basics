@@ -1,0 +1,13 @@
+Node JS - https://nodejs.org/en/download
+
+React Devloper Tools - https://chromewebstore.google.com/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en
+
+Xampp (MySql) - https://www.apachefriends.org/download.html
+
+Postman - https://www.postman.com/downloads/
+
+MongoDB - https://www.mongodb.com/try/download/community
+
+
+ES7+ React/Redux/React-Native snippets -- Extension VS Code
+ 
