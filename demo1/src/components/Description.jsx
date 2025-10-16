@@ -1,12 +1,19 @@
+import { useState } from 'react';
 import './Descriptions.css';
+import { useNavigate } from 'react-router-dom';
 
-function add(a,b){
-    return a+b;
-}
 
 
      
 function Description(){
+    const [ search ,setSearch ] = useState();
+    const navigate = useNavigate();
+
+    const Search = () => {
+        navigate(`/search/${search}`);
+    }
+
+
     const details = [{
         name : "Raju",
         age : 19
@@ -28,6 +35,8 @@ function Description(){
         <p key={index}>{data.name} is {data.age} years old.</p>
         </>)
     })}
+    <input type="text" value={search} onChange = {(e) => setSearch(e.target.value)} />
+    <button onClick={Search}>Search</button>
     </>)
 }
 

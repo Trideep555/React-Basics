@@ -8,6 +8,9 @@ import Buttons from './components/Buttons'
 import Gallery from './components/Gallery'
 import Navbar from './components/Navbar'
 import {BrowserRouter, Route, Routes}  from 'react-router-dom';
+import Search from './components/Search'
+import NotFound from './components/NotFound'
+import Timer from './components/Timer'
 
 
 
@@ -19,7 +22,9 @@ function App() {
     <Routes>
       <Route path="/" element={<><Navbar /><Description/></>} />
       <Route path="/gallery" element={<><Navbar /><Gallery/></>} />
-      <Route path="/form" element={<><Navbar /><Form/></>} />
+      <Route path="/form" element={<><Navbar /><Form/> <Timer/></>} />
+      <Route path="/search/:value" element={<><Navbar /><Search/></>} />
+      <Route path='*' element={<><Navbar /><NotFound /></>} />
     </Routes>
     </BrowserRouter>
     </>
